@@ -21,7 +21,7 @@ const App = () => {
 
 
   return (
-    <div className='overflow-x-hidden'>
+    <div className=''>
      <Navbar/>
      <Home/>
      <Services/>
