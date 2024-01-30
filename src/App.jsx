@@ -1,7 +1,33 @@
-export default function App() {
+import React from 'react'
+import AOS from "aos"
+import "aos/dist/aos.css"
+import { useEffect } from 'react'
+import Navbar from './components/Navbar/Navbar'
+import Home from './components/Home/Home'
+import Services from './components/Services/Services'
+
+
+const App = () => {
+
+
+  useEffect(()=>{
+    AOS.init({
+      offset: 200,
+      duration: 700,
+      easing: 'ease-in-sine',
+      delay: 100,
+    });
+  },[])
+
+
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <div className='overflow-x-hidden'>
+     <Navbar/>
+     <Home/>
+     <Services/>
+     
+    </div>
   )
 }
+
+export default App
