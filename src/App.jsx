@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import Services from './components/Services/Services'
+import Banner from './components/Banner/Banner'
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
      <Navbar/>
      <Home/>
      <Services/>
-     
+     <Banner/>
     </div>
   )
 }

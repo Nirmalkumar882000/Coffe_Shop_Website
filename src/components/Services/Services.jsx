@@ -31,7 +31,9 @@ const Services = () => {
   return (
     <div className='py-10'>
      <div className="container">
+
       {/* Header  title  */}
+
       <div className='mb-20 text-center'>
         <h1 className='text-4xl font-bold text-gray-800 font-cursive'>Best Coffee for you</h1>
       </div>
@@ -41,14 +43,25 @@ const Services = () => {
           {
             services.map((service)=>{
               return(
+                <>
               <div
               data-aos="fade-up"
               data-aos-delay={service.aosDelay}
                 className='rounded-2xl bg-white hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]'>
-                <div className=''>
-                <img src={service.img} alt="coffee image" className='max-w-[200px] block'/>
+
+                <div className='h-[122px]'>
+                <img src={service.img} alt="coffee image" className='max-w-[200px] block mx-auto transform -translate-y-14
+                  group-hover:scale-105 group-hover:rotate-6 duration-300'/>
+                </div>
+                <div className="p-4 text-center">
+                  <div className="w-full "></div>
+                  <h1 className="text-xl font-bold">{service.name}</h1>
+                  <p className="text-gray-500 group-hover:text-white duration-high text-sm line-clamp-2">
+                    {service.description}
+                  </p>
                 </div>
               </div>
+                </>
               )})
           }
         
