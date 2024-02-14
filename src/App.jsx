@@ -5,6 +5,10 @@ import { useEffect } from 'react'
 import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import Services from './components/Services/Services'
+import Banner from './components/Banner/Banner'
+import AppBanner from './components/AppBanner/AppBanner'
+import Testimonial from './components/Testimonial/Testimonial'
+import Footer from './components/Footer/Footer'
 
 
 const App = () => {
@@ -25,7 +29,10 @@ const App = () => {
      <Navbar/>
      <Home/>
      <Services/>
-     
+     <Banner/>
+     <AppBanner/>
+     <Testimonial/>
+     <Footer/>
     </div>
   )
 }

@@ -7,16 +7,16 @@ const Home = () => {
       <div className="container pb-8 smLpb-0 ">
         <div className="grid grid-cols-1 sm:grid-cols-2">
             {/* Text content Section  */}
-            <div className='order-2 sm:order-1 gap-6'>
-                <h1 className='text-5xl font-bold sm:text-6xl lg:text-7xl'>We Serve the richest  
+            <div className='order-2 gap-6 sm:order-1' data-aos="fade-up">
+                <h1 className='text-5xl font-bold sm:text-6xl lg:text-7xl'>We Serve the richest
                     <span className='text-primary font-cursive'>
-                        Coffee 
+                        Coffee
                     </span>
                     in the city
                 </h1>
                 <div >
-                    <button className='px-4 py-2  mt-2 text-white duration-200 border-2 rounded-full bg-gradient-to-r from-primary to-secondary border-primary hover:scale-105'>
-                        Coffee And Code 
+                    <button className='px-4 py-2 mt-2 text-white duration-200 border-2 rounded-full bg-gradient-to-r from-primary to-secondary border-primary hover:scale-105'>
+                        Coffee And Code
                     </button>
                 </div>
             </div>

@@ -23,7 +23,7 @@ const Navbar = () => {
     }
 
    ]
-  
+
 
 
   return (
@@ -31,14 +31,14 @@ const Navbar = () => {
       <div className="container py-2">
         <div className="flex justify-between gap-4 justify-items-center">
           {/* logo Section */}
-          <div className=''>
+          <div className='' data-aos="fade-down">
             <a className='flex items-center justify-center gap-3 text-2xl font-bold sm:text-3xl font-cursive' href='#'>
               <img src={Logo} alt='logo' className='w-14'/>
               Coffee Cafe</a>
           </div>
           {/* Links Section */}
-          
-          <div className='flex items-center justify-between gap-4'>
+
+          <div className='flex items-center justify-between gap-4' data-aos="fade-down">
             <ul className='items-center hidden gap-4 sm:flex'>
               {
                 Menus.map((data,index)=>(
@@ -53,7 +53,6 @@ const Navbar = () => {
               Order
               <FaCoffee className='text-xl cursor-pointer'/>
             </button>
-            
           </div>
         </div>
       </div>

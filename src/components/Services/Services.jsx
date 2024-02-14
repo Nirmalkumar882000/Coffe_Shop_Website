@@ -45,13 +45,22 @@ const Services = () => {
               data-aos="fade-up"
               data-aos-delay={service.aosDelay}
                 className='rounded-2xl bg-white hover:bg-primary hover:text-white relative shadow-xl duration-high group max-w-[300px]'>
+
                 <div className=''>
-                <img src={service.img} alt="coffee image" className='max-w-[200px] block'/>
+                <img src={service.img} alt="coffee image" className=' max-w-[200px] block mx-auto transform -translate-y-14  group-hover:scale-110 group-hover:rotate-6 duration-300'/>
+                </div>
+
+                <div className='p-4 text-center'>
+
+                  <div className='w-full bg-emerald-400'></div>
+                  <h1 className='text-xl font-bold'>{service.name}</h1>
+                  <p className='text-sm text-gray-400 group-hover:text-white duration-high line-clamp-2 '>{service.description}</p>
+
                 </div>
               </div>
               )})
           }
-        
+
       </div>
 
 
