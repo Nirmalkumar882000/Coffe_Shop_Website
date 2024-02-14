@@ -6,9 +6,12 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home/Home'
 import Services from './components/Services/Services'
 import Banner from './components/Banner/Banner'
+<<<<<<< HEAD
 import AppBanner from './components/AppBanner/AppBanner'
 import Testimonial from './components/Testimonial/Testimonial'
 import Footer from './components/Footer/Footer'
+=======
+>>>>>>> be2c79f4f0f73ba4f903d782b96503eb15a8fead
 
 
 const App = () => {
@@ -30,9 +33,12 @@ const App = () => {
      <Home/>
      <Services/>
      <Banner/>
+<<<<<<< HEAD
      <AppBanner/>
      <Testimonial/>
      <Footer/>
+=======
+>>>>>>> be2c79f4f0f73ba4f903d782b96503eb15a8fead
     </div>
   )
 }
